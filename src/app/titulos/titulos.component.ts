@@ -43,4 +43,8 @@ export class TitulosComponent implements OnInit {
     console.log(this.password);
   }
 
+  escribir(evento:any){
+    console.log(evento.target.value);
+  }
+
 }
