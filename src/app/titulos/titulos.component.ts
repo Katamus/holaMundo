@@ -47,4 +47,9 @@ export class TitulosComponent implements OnInit {
     console.log(evento.target.value);
   }
 
+  clorearFondoEvento(evento:any){
+    evento.srcElement.style.background = "red";
+    evento.srcElement.style.width = "200px";
+  }
+
 }
