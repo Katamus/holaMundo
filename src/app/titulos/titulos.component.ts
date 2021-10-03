@@ -33,4 +33,14 @@ export class TitulosComponent implements OnInit {
     alert('Ha realizado doble click');
   }
 
+  escribirModelo(){
+    console.log(this.password);
+  }
+
+  escribirCorreo(){
+    this.password = this.correo;
+    console.log(this.correo);
+    console.log(this.password);
+  }
+
 }

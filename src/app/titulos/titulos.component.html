@@ -6,10 +6,14 @@
 <input type="text" [(ngModel)]="inputNuevo" />
 <p>{{inputNuevo}}</p>
 <label for="">correo 
-    <input type="text" [(ngModel)]= "correo" />
+    <input type="text" (ngModelChange)="escribirCorreo()" [(ngModel)]= "correo" />
 </label>
 <label for="">Contraseña
-    <input type="password" [(ngModel)]= "password" />
+    <input type="password" (ngModelChange)="escribirModelo()" [(ngModel)]= "password" />
 </label>
+
+
+
+
 <button (dblclick)="ingresar()" >Iniciar</button>
 <button (dblclick)="llamarAlert()" >Doble Click</button>
