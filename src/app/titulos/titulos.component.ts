@@ -54,4 +54,16 @@ export class TitulosComponent implements OnInit {
     evento.srcElement.style.width = "200px";
   }
 
+  cambiarTamano(evento:any){
+    evento.srcElement.style.width = "284px";
+    evento.srcElement.style.Heigth = "373px";
+    evento.srcElement.style.border = "1px solid red"
+  }
+
+  incrementarTamano(evento:any){
+    evento.srcElement.style.width = "184px";
+    evento.srcElement.style.Heigth = "273px";
+    evento.srcElement.style.border = "1px solid grend"
+  }
+
 }
