@@ -29,4 +29,8 @@ export class TitulosComponent implements OnInit {
     console.log(this.password);
   }
 
+  llamarAlert(){
+    alert('Ha realizado doble click');
+  }
+
 }
