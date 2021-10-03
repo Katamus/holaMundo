@@ -9,16 +9,5 @@
     <input type="text" (ngModelChange)="escribirCorreo()" [(ngModel)]= "correo" />
 </label>
 <label for="">Contraseña
-    <input type="password" (ngModelChange)="escribirModelo()" [(ngModel)]= "password" />
+    <input type="password" (keydown)= "ingresar($event)" [(ngModel)]= "password" />
 </label>
-
-
-
-
-<button (dblclick)="ingresar()" >Iniciar</button>
-<button (dblclick)="llamarAlert()" >Doble Click</button>
-<br/>
-<br/>
-<input type="password" (input)= "escribir($event)" />
-
-<input type="text" (focus)= "clorearFondoEvento($event)" />

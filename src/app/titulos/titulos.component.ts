@@ -24,9 +24,11 @@ export class TitulosComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  ingresar () {
-    console.log(this.correo);
-    console.log(this.password);
+  ingresar (evento:any) {
+    debugger;
+    if(evento.key == "Enter" ){
+      console.log("Ingresando al sistema");
+    }
   }
 
   llamarAlert(){
