@@ -1,3 +1,4 @@
+<!--
 <div *ngIf="cargando" >
     <img src="https://c.tenor.com/HjtiZCVmreYAAAAC/gun-anime.gif" alt=""/>
 </div>
@@ -6,4 +7,26 @@
 </div>
 <div>
     <button (click)="alternar()" >Alternar</button>
+</div>
+-->
+<div *ngFor="let nombre of nombres">
+    <p>Hola mi nombre es:{{nombre}}</p>
+</div>
+
+
+<div *ngFor="let articulo of articulos">
+    <p style="border: #C00 solid 1px">
+        <span>
+            El articulo: {{articulo.nombre}}
+        </span><br/>
+        <span>
+            con una cantidad de  {{articulo.cantidad}}
+        </span><br/>
+        <span>
+            lo fabrico la empresa  {{articulo.empresa}}
+        </span><br/>
+        <span>
+            para que venciera en la fecha {{articulo.fecha}}  de nuestro señor
+        </span>
+    </p>
 </div>
