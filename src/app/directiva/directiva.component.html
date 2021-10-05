@@ -57,7 +57,7 @@
         <span [ngClass]="{'importante':articulo.importante,'textoGrande':articulo.textoGrande}">
             El articulo: {{articulo.nombre}}
         </span><br/>
-        <span>
+        <span [class.textoGrande]="articulo.textoGrande">|
             con una cantidad de  {{articulo.cantidad}}
         </span><br/>
         <span>
