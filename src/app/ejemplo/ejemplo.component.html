@@ -11,13 +11,19 @@
 
         <button class="btn btn-primary" (click)="agregarAlumno()">Agregar</button>
     </form>
+    <div class="mb-3">
+        <label for="exelencia" class="form-label" >Es exelencia</label>
+        <select  name="exelencia" class="form-select" aria-label="Default select example" [(ngModel)] = "alumno.exelencia">
+            <option value="true">Si</option>
+            <option value="false">No</option>
+        </select>
+    </div>
     <br>
     <div *ngFor="let alumnofor of listaAlumno">
         <div class="card">
             <div class="card-body">
-                alumno: {{alumnofor.nombre}} {{alumnofor.apellido}}
+                <span [ngClass]="{'exelencia': alumnofor.exelencia}" >alumno:</span> {{alumnofor.nombre}} {{alumnofor.apellido}}
             </div>
         </div>
     </div>
-    
 </div>
