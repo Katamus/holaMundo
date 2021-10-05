@@ -16,6 +16,7 @@ export class DirectivaComponent implements OnInit {
 
   cargando:boolean = true;
   nombres:string[] = ["Lucas","Roberto","Patoja","Eduardo"];
+  menu:string = "";
 
   articulos:Array<articulo> = [{
    nombre:"arroz",
@@ -49,6 +50,10 @@ export class DirectivaComponent implements OnInit {
 
   alternar(){
     this.cargando= !this.cargando;
+  }
+
+  definirMenu(opcion:string){
+    this.menu = opcion;
   }
 
 }

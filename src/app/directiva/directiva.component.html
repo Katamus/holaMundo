@@ -9,6 +9,7 @@
     <button (click)="alternar()" >Alternar</button>
 </div>
 -->
+<!--
 <div *ngFor="let nombre of nombres">
     <p>Hola mi nombre es:{{nombre}}</p>
 </div>
@@ -29,4 +30,16 @@
             para que venciera en la fecha {{articulo.fecha}}  de nuestro señor
         </span>
     </p>
+</div>
+-->
+<div class="tag" >
+    <button (click)="definirMenu('op1')" >Opcion uno</button>
+    <button (click)="definirMenu('op2')" >Opcion dos</button>
+    <button (click)="definirMenu('op3')" >Opcion tres</button>
+    <div class="contenido"  [ngSwitch] = "menu" >
+        <p *ngSwitchCase="'op1'" >Estamos en la opcion uno</p>
+        <p *ngSwitchCase="'op2'" >Estamos en la opcion dos</p>
+        <p *ngSwitchCase="'op3'" >Estamos en la opcion tres</p>
+        <p *ngSwitchDefault >Seleccione una opcion</p>
+    </div>
 </div>
