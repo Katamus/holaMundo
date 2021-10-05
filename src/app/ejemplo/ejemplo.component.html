@@ -1,1 +1,23 @@
-<p>ejemplo works!</p>
+<div class="container">
+    <form action="">
+        <div class="mb-3">
+            <label for="nombre" class="form-label" >Nombre</label>
+            <input type="text" name="nombre" class="form-control" [(ngModel)] = "alumno.nombre" />
+        </div>
+        <div class="mb-3">
+            <label for="apellido" class="form-label" >Apellido</label>
+            <input type="text" name="apellido" class="form-control" [(ngModel)]= "alumno.apellido"/>
+        </div>
+
+        <button class="btn btn-primary" (click)="agregarAlumno()">Agregar</button>
+    </form>
+    <br>
+    <div *ngFor="let alumnofor of listaAlumno">
+        <div class="card">
+            <div class="card-body">
+                alumno: {{alumnofor.nombre}} {{alumnofor.apellido}}
+            </div>
+        </div>
+    </div>
+    
+</div>
