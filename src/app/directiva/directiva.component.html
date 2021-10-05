@@ -1,0 +1,9 @@
+<div *ngIf="cargando" >
+    <img src="https://c.tenor.com/HjtiZCVmreYAAAAC/gun-anime.gif" alt=""/>
+</div>
+<div *ngIf="!cargando">
+    <p>Termino de cargar</p>
+</div>
+<div>
+    <button (click)="alternar()" >Alternar</button>
+</div>
