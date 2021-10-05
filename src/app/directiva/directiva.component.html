@@ -32,6 +32,7 @@
     </p>
 </div>
 -->
+<!--
 <div class="tag" >
     <button (click)="definirMenu('op1')" >Opcion uno</button>
     <button (click)="definirMenu('op2')" >Opcion dos</button>
@@ -42,4 +43,28 @@
         <p *ngSwitchCase="'op3'" >Estamos en la opcion tres</p>
         <p *ngSwitchDefault >Seleccione una opcion</p>
     </div>
+</div>
+-->
+<button (click)="alternarCuadro()">aplicar css cuadrado</button>
+<div [ngClass]="{'cuadrado':aplicarCuadro }" >
+    <p>
+        Texto encerrado en un cuadro
+    </p>
+</div>
+
+<div *ngFor="let articulo of articulos">
+    <p style="border: #C00 solid 1px">
+        <span [ngClass]="{'importante':articulo.importante,'textoGrande':articulo.textoGrande}">
+            El articulo: {{articulo.nombre}}
+        </span><br/>
+        <span>
+            con una cantidad de  {{articulo.cantidad}}
+        </span><br/>
+        <span>
+            lo fabrico la empresa  {{articulo.empresa}}
+        </span><br/>
+        <span>
+            para que venciera en la fecha {{articulo.fecha}}  de nuestro señor
+        </span>
+    </p>
 </div>

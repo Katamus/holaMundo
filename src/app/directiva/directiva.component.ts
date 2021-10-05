@@ -5,6 +5,8 @@ interface articulo{
   cantidad:number;
   fecha:Date;
   empresa:string;
+  importante:boolean,
+  textoGrande:boolean
 }
 
 @Component({
@@ -17,27 +19,36 @@ export class DirectivaComponent implements OnInit {
   cargando:boolean = true;
   nombres:string[] = ["Lucas","Roberto","Patoja","Eduardo"];
   menu:string = "";
+  aplicarCuadro:boolean = true;
 
   articulos:Array<articulo> = [{
    nombre:"arroz",
    cantidad:100,
    fecha:new Date("10/15/2021"),
-   empresa:"Roa"
+   empresa:"Roa",
+   importante:true,
+   textoGrande:false
   },{
     nombre:"Maiz",
     cantidad:50,
     fecha:new Date("10/16/2021"),
-    empresa:"Blanquita"
+    empresa:"Blanquita",
+    importante:false,
+    textoGrande:true
   },{
     nombre:"lentejas",
     cantidad:25,
     fecha:new Date("10/20/2021"),
-    empresa:"La tortuga"
+    empresa:"La tortuga",
+    importante:false,
+    textoGrande:false
   },{
     nombre:"Blanquiños",
     cantidad:1000,
     fecha:new Date("01/24/2022"),
-    empresa:"El gringo"
+    empresa:"El gringo",
+    importante:true,
+    textoGrande:true
   }]
 
   constructor() { }
@@ -54,6 +65,10 @@ export class DirectivaComponent implements OnInit {
 
   definirMenu(opcion:string){
     this.menu = opcion;
+  }
+
+  alternarCuadro(){
+    this.aplicarCuadro= !this.aplicarCuadro;
   }
 
 }
