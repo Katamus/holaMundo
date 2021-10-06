@@ -8,13 +8,15 @@ import { FormsModule } from '@angular/forms';
 import { DirectivaComponent } from './directiva/directiva.component';
 import { EjemploComponent } from './ejemplo/ejemplo.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { TextolargoPipe } from './textolargo.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     TitulosComponent,
     DirectivaComponent,
     EjemploComponent,
-    PipesComponent
+    PipesComponent,
+    TextolargoPipe
   ],
   imports: [
     BrowserModule,
