@@ -9,6 +9,7 @@ import { DirectivaComponent } from './directiva/directiva.component';
 import { EjemploComponent } from './ejemplo/ejemplo.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { TextolargoPipe } from './textolargo.pipe';
+import { Pagina404Component } from './pagina404/pagina404.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { TextolargoPipe } from './textolargo.pipe';
     DirectivaComponent,
     EjemploComponent,
     PipesComponent,
-    TextolargoPipe
+    TextolargoPipe,
+    Pagina404Component
   ],
   imports: [
     BrowserModule,
