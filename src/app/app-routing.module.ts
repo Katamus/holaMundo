@@ -7,11 +7,11 @@ import { PipesComponent } from './pipes/pipes.component';
 import { TitulosComponent } from './titulos/titulos.component';
 
 const routes: Routes = [
-  { path: '', component: DirectivaComponent},
+  { path: '', component: TitulosComponent},
+  { path: 'directiva', component: DirectivaComponent},
   { path: 'ejemplo', component: EjemploComponent },
   { path: 'pipes', component: PipesComponent },
-  { path: "eventos", component : TitulosComponent},
-  { path: "**", component : Pagina404Component}
+  { path: "eventos", component : TitulosComponent}
 ];
 
 @NgModule({

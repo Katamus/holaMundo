@@ -10,6 +10,7 @@ import { EjemploComponent } from './ejemplo/ejemplo.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { TextolargoPipe } from './textolargo.pipe';
 import { Pagina404Component } from './pagina404/pagina404.component';
+import { EncabezadoComponent } from './encabezado/encabezado.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { Pagina404Component } from './pagina404/pagina404.component';
     EjemploComponent,
     PipesComponent,
     TextolargoPipe,
-    Pagina404Component
+    Pagina404Component,
+    EncabezadoComponent
   ],
   imports: [
     BrowserModule,
