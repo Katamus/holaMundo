@@ -11,6 +11,9 @@ import { PipesComponent } from './pipes/pipes.component';
 import { TextolargoPipe } from './textolargo.pipe';
 import { Pagina404Component } from './pagina404/pagina404.component';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { UsuariosEditarComponent } from './usuarios/usuarios-editar/usuarios-editar.component';
+import { UsuariosAgregarComponent } from './usuarios/usuarios-agregar/usuarios-agregar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +23,10 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
     PipesComponent,
     TextolargoPipe,
     Pagina404Component,
-    EncabezadoComponent
+    EncabezadoComponent,
+    UsuariosComponent,
+    UsuariosEditarComponent,
+    UsuariosAgregarComponent
   ],
   imports: [
     BrowserModule,

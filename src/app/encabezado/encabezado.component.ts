@@ -40,6 +40,12 @@ export class EncabezadoComponent implements OnInit {
     nombre:"Directiva",
     id:4,
     ruta:"/directiva"
+  },{
+    activo: false,
+    estado:true,
+    nombre:"Usuarios",
+    id:4,
+    ruta:"/usuarios"
   }
 ];
 

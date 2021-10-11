@@ -5,13 +5,24 @@ import { EjemploComponent } from './ejemplo/ejemplo.component';
 import { Pagina404Component } from './pagina404/pagina404.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { TitulosComponent } from './titulos/titulos.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { UsuariosAgregarComponent } from './usuarios/usuarios-agregar/usuarios-agregar.component';
+import { UsuariosEditarComponent } from './usuarios/usuarios-editar/usuarios-editar.component';
+
 
 const routes: Routes = [
   { path: '', component: TitulosComponent},
   { path: 'directiva', component: DirectivaComponent},
   { path: 'ejemplo', component: EjemploComponent },
   { path: 'pipes', component: PipesComponent },
-  { path: "eventos", component : TitulosComponent}
+  { path: "eventos", component : TitulosComponent},
+  { path: "usuarios", component : UsuariosComponent,children:[
+    {
+      path: "agregar", component : UsuariosAgregarComponent
+    },{
+      path: "editar", component : UsuariosEditarComponent
+    }
+  ] }
 ];
 
 @NgModule({
