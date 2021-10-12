@@ -9,6 +9,7 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { UsuariosAgregarComponent } from './usuarios/usuarios-agregar/usuarios-agregar.component';
 import { UsuariosEditarComponent } from './usuarios/usuarios-editar/usuarios-editar.component';
 import { ArticuloComponent } from './articulo/articulo.component';
+import { ArticuloDetalleComponent } from './articulo-detalle/articulo-detalle.component';
 
 
 const routes: Routes = [
@@ -25,6 +26,8 @@ const routes: Routes = [
     }
   ] },{
     path: "articulo", component :ArticuloComponent
+  },{
+    path: "articuloDetalle/:nombre/:precio", component :ArticuloDetalleComponent
   }
 ];
 
