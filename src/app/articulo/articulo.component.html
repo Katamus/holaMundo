@@ -1,0 +1,7 @@
+<div  class="container" >
+    <div class="articulos" *ngFor="let articulo of articulos" >
+        <h4>Nombre: {{articulo.nombre}}</h4>
+        <p>Descripcion: {{articulo.descripcion}}</p>
+        <h5>Precio: {{articulo.precio | currency: 'COP. '}}</h5>
+    </div>
+</div>

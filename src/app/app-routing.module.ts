@@ -8,6 +8,7 @@ import { TitulosComponent } from './titulos/titulos.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { UsuariosAgregarComponent } from './usuarios/usuarios-agregar/usuarios-agregar.component';
 import { UsuariosEditarComponent } from './usuarios/usuarios-editar/usuarios-editar.component';
+import { ArticuloComponent } from './articulo/articulo.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,9 @@ const routes: Routes = [
     },{
       path: "editar", component : UsuariosEditarComponent
     }
-  ] }
+  ] },{
+    path: "articulo", component :ArticuloComponent
+  }
 ];
 
 @NgModule({

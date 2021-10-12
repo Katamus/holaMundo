@@ -44,8 +44,14 @@ export class EncabezadoComponent implements OnInit {
     activo: false,
     estado:true,
     nombre:"Usuarios",
-    id:4,
+    id:5,
     ruta:"/usuarios"
+  },{
+    activo: false,
+    estado:true,
+    nombre:"Articulos",
+    id:6,
+    ruta:"/articulo"
   }
 ];
 

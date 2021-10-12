@@ -14,6 +14,8 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { UsuariosEditarComponent } from './usuarios/usuarios-editar/usuarios-editar.component';
 import { UsuariosAgregarComponent } from './usuarios/usuarios-agregar/usuarios-agregar.component';
+import { ArticuloComponent } from './articulo/articulo.component';
+import { ArticuloDetalleComponent } from './articulo-detalle/articulo-detalle.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,9 @@ import { UsuariosAgregarComponent } from './usuarios/usuarios-agregar/usuarios-a
     EncabezadoComponent,
     UsuariosComponent,
     UsuariosEditarComponent,
-    UsuariosAgregarComponent
+    UsuariosAgregarComponent,
+    ArticuloComponent,
+    ArticuloDetalleComponent
   ],
   imports: [
     BrowserModule,
