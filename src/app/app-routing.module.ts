@@ -27,7 +27,7 @@ const routes: Routes = [
   ] },{
     path: "articulo", component :ArticuloComponent
   },{
-    path: "articuloDetalle/:nombre/:precio", component :ArticuloDetalleComponent
+    path: "articuloDetalle", component :ArticuloDetalleComponent
   }
 ];
 
